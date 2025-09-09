@@ -4,7 +4,7 @@
     "jsr:@deno/esbuild-plugin@^1.2.0": "1.2.0",
     "jsr:@deno/loader@~0.3.3": "0.3.5",
     "jsr:@fresh/build-id@1": "1.0.1",
-    "jsr:@fresh/core@^2.0.0-alpha.60": "2.0.0-alpha.60",
+    "jsr:@fresh/core@^2.0.0-beta.5": "2.0.0-beta.5",
     "jsr:@std/bytes@^1.0.6": "1.0.6",
     "jsr:@std/encoding@1": "1.0.10",
     "jsr:@std/encoding@^1.0.10": "1.0.10",
@@ -20,12 +20,11 @@
     "jsr:@std/semver@1": "1.0.5",
     "jsr:@std/uuid@^1.0.7": "1.0.9",
     "npm:@opentelemetry/api@^1.9.0": "1.9.0",
-    "npm:@preact/signals@^2.3.1": "2.3.1_preact@10.27.1",
+    "npm:@preact/signals@^2.2.1": "2.3.1_preact@10.27.1",
     "npm:esbuild-wasm@0.25.7": "0.25.7",
     "npm:esbuild@0.25.7": "0.25.7",
-    "npm:preact-render-to-string@^6.5.11": "6.5.13_preact@10.27.1",
-    "npm:preact@^10.27.0": "10.27.1",
-    "npm:preact@^10.27.1": "10.27.1"
+    "npm:preact-render-to-string@^6.5.11": "6.6.1_preact@10.27.1",
+    "npm:preact@^10.27.0": "10.27.1"
   },
   "jsr": {
     "@deno/esbuild-plugin@1.2.0": {
@@ -44,8 +43,8 @@
         "jsr:@std/encoding@^1.0.10"
       ]
     },
-    "@fresh/core@2.0.0-alpha.60": {
-      "integrity": "4f5ba71ab6704486307f298aa3351abc5a0d3a2e33577f2be9127a14f5119c11",
+    "@fresh/core@2.0.0-beta.5": {
+      "integrity": "d7ac54d5a1d6f88d19e74a4c1dcdd6de1e1cf3712654e8a7dfbafb74aaec2288",
       "dependencies": [
         "jsr:@deno/esbuild-plugin",
         "jsr:@fresh/build-id",
@@ -60,10 +59,11 @@
         "jsr:@std/semver",
         "jsr:@std/uuid",
         "npm:@opentelemetry/api",
+        "npm:@preact/signals",
         "npm:esbuild",
         "npm:esbuild-wasm",
-        "npm:preact-render-to-string",
-        "npm:preact@^10.27.0"
+        "npm:preact",
+        "npm:preact-render-to-string"
       ]
     },
     "@std/bytes@1.0.6": {
@@ -249,8 +249,8 @@
     "@opentelemetry/api@1.9.0": {
       "integrity": "sha512-3giAOQvZiH5F9bMlMiv8+GSPMeqg0dbaeo58/0SlA9sxSqZhnUtxzX9/2FzyhS9sWQf5S0GJE0AKBrFqjpeYcg=="
     },
-    "@preact/signals-core@1.12.0": {
-      "integrity": "sha512-etWpENXm469RHMWIZGblgWrapbIGcRcbccEGGaLkFez3PjlI3XkBrUtSiNFsIfV/DN16PxMOxbWAZUIaLFyJDg=="
+    "@preact/signals-core@1.12.1": {
+      "integrity": "sha512-BwbTXpj+9QutoZLQvbttRg5x3l5468qaV2kufh+51yha1c53ep5dY4kTuZR35+3pAZxpfQerGJiQqg34ZNZ6uA=="
     },
     "@preact/signals@2.3.1_preact@10.27.1": {
       "integrity": "sha512-nyuRIGmcwM/HjvFHhN2xUWfyla9D4llHt+prWoxjQfD6b5prO7CFPlG/xjJkP31Oic4KQXfH9SIhJFP9cy4lmg==",
@@ -296,8 +296,8 @@
       "scripts": true,
       "bin": true
     },
-    "preact-render-to-string@6.5.13_preact@10.27.1": {
-      "integrity": "sha512-iGPd+hKPMFKsfpR2vL4kJ6ZPcFIoWZEcBf0Dpm3zOpdVvj77aY8RlLiQji5OMrngEyaxGogeakTb54uS2FvA6w==",
+    "preact-render-to-string@6.6.1_preact@10.27.1": {
+      "integrity": "sha512-IIMfXRjmbSP9QmG18WJLQa4Z4yx3J0VC9QN5q9z2XYlWSzFlJ+bSm/AyLyyV/YFwjof1OXFX2Mz6Ao60LXudJg==",
       "dependencies": [
         "preact"
       ]
@@ -308,9 +308,7 @@
   },
   "workspace": {
     "dependencies": [
-      "jsr:@fresh/core@^2.0.0-alpha.60",
-      "npm:@preact/signals@^2.3.1",
-      "npm:preact@^10.27.1"
+      "jsr:@fresh/core@^2.0.0-beta.5"
     ]
   }
 }
